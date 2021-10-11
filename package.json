@@ -20,6 +20,7 @@
   "homepage": "https://github.com/LancelotLewis/learn-github-action#readme",
   "dependencies": {
     "@actions/core": "^1.6.0",
-    "@actions/github": "^5.0.0"
+    "@actions/github": "^5.0.0",
+    "shelljs": "^0.8.4"
   }
 }
