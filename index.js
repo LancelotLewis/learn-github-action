@@ -4,16 +4,13 @@ const shell = require('shelljs');
 try {
   const endpoint = core.getInput('endpoint');
   const accessToken = core.getInput('access-token');
-  // shell.exec(`blocklet config set registry ${endpoint}`);
-  shell.exec(`echo ${endpoint}`);
+  shell.exec(`blocklet config set registry ${endpoint}`);
 
   if (accessToken) {
-    // shell.exec(`blocklet upload --access-token ${accessToken}`);
-    shell.exec(`echo ${accessToken}`);
+    shell.exec(`blocklet upload --access-token ${accessToken}`);
   } else {
     const developerSk = core.getInput('developer-sk');
-    // shell.exec(`blocklet publish --developer-sk ${developerSk}`);
-    shell.exec(`echo ${developerSk}`);
+    shell.exec(`blocklet publish --developer-sk ${developerSk}`);
   }
 } catch (error) {
   core.setFailed(error.message);

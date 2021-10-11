@@ -112,6 +112,11 @@
   dependencies:
     "@octokit/openapi-types" "^11.2.0"
 
+"@vercel/ncc@^0.31.1":
+  version "0.31.1"
+  resolved "https://registry.npmmirror.com/@vercel/ncc/download/@vercel/ncc-0.31.1.tgz#9346c7e59326f5eeac75c0286e47df94c2d6d8f7"
+  integrity sha1-k0bH5ZMm9e6sdcAobkfflMLW2Pc=
+
 balanced-match@^1.0.0:
   version "1.0.2"
   resolved "https://registry.npmmirror.com/balanced-match/download/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"

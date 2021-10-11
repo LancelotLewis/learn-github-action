@@ -1,15 +1,19 @@
 on: [push]
 
 jobs:
-  hello_world_job:
+  Realese:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Test from self action
-        uses: ./
+      - name: Use Node.js v14
+        uses: actions/setup-node@v2
         with:
-          endpoint: 'https://registry.arcblock.io/'
-          access-token: '123123'
-          developer-sk: '234234'
+          node-version: 14
+      - name: Build
+        run: yarn build
+      - uses: ncipollo/release-action@v1
+        with:
+          artifacts: 'dist/*.*'
+          token: ${{ secrets.GITHUB_TOKEN }}
