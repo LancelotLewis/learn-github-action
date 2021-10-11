@@ -10,6 +10,6 @@ jobs:
       - name: Test from self action
         uses: ./
         with:
-          registry: 'https://registry.arcblock.io/'
+          endpoint: 'https://registry.arcblock.io/'
           access-token: '123123'
           developer-sk: '234234'
