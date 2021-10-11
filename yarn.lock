@@ -4,15 +4,15 @@
 
 "@actions/core@^1.6.0":
   version "1.6.0"
-  resolved "https://registry.npmmirror.com/@actions/core/download/@actions/core-1.6.0.tgz#0568e47039bfb6a9170393a73f3b7eb3b22462cb"
-  integrity sha1-BWjkcDm/tqkXA5OnPzt+s7IkYss=
+  resolved "https://registry.yarnpkg.com/@actions/core/-/core-1.6.0.tgz#0568e47039bfb6a9170393a73f3b7eb3b22462cb"
+  integrity sha512-NB1UAZomZlCV/LmJqkLhNTqtKfFXJZAUPcfl/zqG7EfsQdeUJtaWO98SGbuQ3pydJ3fHl2CvI/51OKYlCYYcaw==
   dependencies:
     "@actions/http-client" "^1.0.11"
 
 "@actions/github@^5.0.0":
   version "5.0.0"
-  resolved "https://registry.npmmirror.com/@actions/github/download/@actions/github-5.0.0.tgz#1754127976c50bd88b2e905f10d204d76d1472f8"
-  integrity sha1-F1QSeXbFC9iLLpBfENIE120Ucvg=
+  resolved "https://registry.yarnpkg.com/@actions/github/-/github-5.0.0.tgz#1754127976c50bd88b2e905f10d204d76d1472f8"
+  integrity sha512-QvE9eAAfEsS+yOOk0cylLBIO/d6WyWIOvsxxzdrPFaud39G6BOkUwScXZn1iBzQzHyu9SBkkLSWlohDWdsasAQ==
   dependencies:
     "@actions/http-client" "^1.0.11"
     "@octokit/core" "^3.4.0"
@@ -21,22 +21,22 @@
 
 "@actions/http-client@^1.0.11":
   version "1.0.11"
-  resolved "https://registry.npmmirror.com/@actions/http-client/download/@actions/http-client-1.0.11.tgz#c58b12e9aa8b159ee39e7dd6cbd0e91d905633c0"
-  integrity sha1-xYsS6aqLFZ7jnn3Wy9DpHZBWM8A=
+  resolved "https://registry.yarnpkg.com/@actions/http-client/-/http-client-1.0.11.tgz#c58b12e9aa8b159ee39e7dd6cbd0e91d905633c0"
+  integrity sha512-VRYHGQV1rqnROJqdMvGUbY/Kn8vriQe/F9HR2AlYHzmKuM/p3kjNuXhmdBfcVgsvRWTz5C5XW5xvndZrVBuAYg==
   dependencies:
     tunnel "0.0.6"
 
 "@octokit/auth-token@^2.4.4":
   version "2.5.0"
-  resolved "https://registry.npmmirror.com/@octokit/auth-token/download/@octokit/auth-token-2.5.0.tgz#27c37ea26c205f28443402477ffd261311f21e36"
-  integrity sha1-J8N+omwgXyhENAJHf/0mExHyHjY=
+  resolved "https://registry.yarnpkg.com/@octokit/auth-token/-/auth-token-2.5.0.tgz#27c37ea26c205f28443402477ffd261311f21e36"
+  integrity sha512-r5FVUJCOLl19AxiuZD2VRZ/ORjp/4IN98Of6YJoJOkY75CIBuYfmiNHGrDwXr+aLGG55igl9QrxX3hbiXlLb+g==
   dependencies:
     "@octokit/types" "^6.0.3"
 
 "@octokit/core@^3.4.0":
   version "3.5.1"
-  resolved "https://registry.npmmirror.com/@octokit/core/download/@octokit/core-3.5.1.tgz#8601ceeb1ec0e1b1b8217b960a413ed8e947809b"
-  integrity sha1-hgHO6x7A4bG4IXuWCkE+2OlHgJs=
+  resolved "https://registry.yarnpkg.com/@octokit/core/-/core-3.5.1.tgz#8601ceeb1ec0e1b1b8217b960a413ed8e947809b"
+  integrity sha512-omncwpLVxMP+GLpLPgeGJBF6IWJFjXDS5flY5VbppePYX9XehevbDykRH9PdCdvqt9TS5AOTiDide7h0qrkHjw==
   dependencies:
     "@octokit/auth-token" "^2.4.4"
     "@octokit/graphql" "^4.5.8"
@@ -48,8 +48,8 @@
 
 "@octokit/endpoint@^6.0.1":
   version "6.0.12"
-  resolved "https://registry.npmmirror.com/@octokit/endpoint/download/@octokit/endpoint-6.0.12.tgz#3b4d47a4b0e79b1027fb8d75d4221928b2d05658"
-  integrity sha1-O01HpLDnmxAn+4111CIZKLLQVlg=
+  resolved "https://registry.yarnpkg.com/@octokit/endpoint/-/endpoint-6.0.12.tgz#3b4d47a4b0e79b1027fb8d75d4221928b2d05658"
+  integrity sha512-lF3puPwkQWGfkMClXb4k/eUT/nZKQfxinRWJrdZaJO85Dqwo/G0yOC434Jr2ojwafWJMYqFGFa5ms4jJUgujdA==
   dependencies:
     "@octokit/types" "^6.0.3"
     is-plain-object "^5.0.0"
@@ -57,8 +57,8 @@
 
 "@octokit/graphql@^4.5.8":
   version "4.8.0"
-  resolved "https://registry.npmmirror.com/@octokit/graphql/download/@octokit/graphql-4.8.0.tgz#664d9b11c0e12112cbf78e10f49a05959aa22cc3"
-  integrity sha1-Zk2bEcDhIRLL944Q9JoFlZqiLMM=
+  resolved "https://registry.yarnpkg.com/@octokit/graphql/-/graphql-4.8.0.tgz#664d9b11c0e12112cbf78e10f49a05959aa22cc3"
+  integrity sha512-0gv+qLSBLKF0z8TKaSKTsS39scVKF9dbMxJpj3U0vC7wjNWFuIpL/z76Qe2fiuCbDRcJSavkXsVtMS6/dtQQsg==
   dependencies:
     "@octokit/request" "^5.6.0"
     "@octokit/types" "^6.0.3"
@@ -66,28 +66,28 @@
 
 "@octokit/openapi-types@^11.2.0":
   version "11.2.0"
-  resolved "https://registry.npmmirror.com/@octokit/openapi-types/download/@octokit/openapi-types-11.2.0.tgz?cache=0&sync_timestamp=1633915205206&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40octokit%2Fopenapi-types%2Fdownload%2F%40octokit%2Fopenapi-types-11.2.0.tgz#b38d7fc3736d52a1e96b230c1ccd4a58a2f400a6"
-  integrity sha1-s41/w3NtUqHpayMMHM1KWKL0AKY=
+  resolved "https://registry.yarnpkg.com/@octokit/openapi-types/-/openapi-types-11.2.0.tgz#b38d7fc3736d52a1e96b230c1ccd4a58a2f400a6"
+  integrity sha512-PBsVO+15KSlGmiI8QAzaqvsNlZlrDlyAJYcrXBCvVUxCp7VnXjkwPoFHgjEJXx3WF9BAwkA6nfCUA7i9sODzKA==
 
 "@octokit/plugin-paginate-rest@^2.13.3":
   version "2.17.0"
-  resolved "https://registry.npmmirror.com/@octokit/plugin-paginate-rest/download/@octokit/plugin-paginate-rest-2.17.0.tgz?cache=0&sync_timestamp=1633915251594&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40octokit%2Fplugin-paginate-rest%2Fdownload%2F%40octokit%2Fplugin-paginate-rest-2.17.0.tgz#32e9c7cab2a374421d3d0de239102287d791bce7"
-  integrity sha1-MunHyrKjdEIdPQ3iORAih9eRvOc=
+  resolved "https://registry.yarnpkg.com/@octokit/plugin-paginate-rest/-/plugin-paginate-rest-2.17.0.tgz#32e9c7cab2a374421d3d0de239102287d791bce7"
+  integrity sha512-tzMbrbnam2Mt4AhuyCHvpRkS0oZ5MvwwcQPYGtMv4tUa5kkzG58SVB0fcsLulOZQeRnOgdkZWkRUiyBlh0Bkyw==
   dependencies:
     "@octokit/types" "^6.34.0"
 
 "@octokit/plugin-rest-endpoint-methods@^5.1.1":
   version "5.13.0"
-  resolved "https://registry.npmmirror.com/@octokit/plugin-rest-endpoint-methods/download/@octokit/plugin-rest-endpoint-methods-5.13.0.tgz?cache=0&sync_timestamp=1633915251276&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40octokit%2Fplugin-rest-endpoint-methods%2Fdownload%2F%40octokit%2Fplugin-rest-endpoint-methods-5.13.0.tgz#8c46109021a3412233f6f50d28786f8e552427ba"
-  integrity sha1-jEYQkCGjQSIz9vUNKHhvjlUkJ7o=
+  resolved "https://registry.yarnpkg.com/@octokit/plugin-rest-endpoint-methods/-/plugin-rest-endpoint-methods-5.13.0.tgz#8c46109021a3412233f6f50d28786f8e552427ba"
+  integrity sha512-uJjMTkN1KaOIgNtUPMtIXDOjx6dGYysdIFhgA52x4xSadQCz3b/zJexvITDVpANnfKPW/+E0xkOvLntqMYpviA==
   dependencies:
     "@octokit/types" "^6.34.0"
     deprecation "^2.3.1"
 
 "@octokit/request-error@^2.0.5", "@octokit/request-error@^2.1.0":
   version "2.1.0"
-  resolved "https://registry.npmmirror.com/@octokit/request-error/download/@octokit/request-error-2.1.0.tgz#9e150357831bfc788d13a4fd4b1913d60c74d677"
-  integrity sha1-nhUDV4Mb/HiNE6T9SxkT1gx01nc=
+  resolved "https://registry.yarnpkg.com/@octokit/request-error/-/request-error-2.1.0.tgz#9e150357831bfc788d13a4fd4b1913d60c74d677"
+  integrity sha512-1VIvgXxs9WHSjicsRwq8PlR2LR2x6DwsJAaFgzdi0JfJoGSO8mYI/cHJQ+9FbN21aa+DrgNLnwObmyeSC8Rmpg==
   dependencies:
     "@octokit/types" "^6.0.3"
     deprecation "^2.0.0"
@@ -95,8 +95,8 @@
 
 "@octokit/request@^5.6.0":
   version "5.6.2"
-  resolved "https://registry.npmmirror.com/@octokit/request/download/@octokit/request-5.6.2.tgz#1aa74d5da7b9e04ac60ef232edd9a7438dcf32d8"
-  integrity sha1-GqdNXae54ErGDvIy7dmnQ43PMtg=
+  resolved "https://registry.yarnpkg.com/@octokit/request/-/request-5.6.2.tgz#1aa74d5da7b9e04ac60ef232edd9a7438dcf32d8"
+  integrity sha512-je66CvSEVf0jCpRISxkUcCa0UkxmFs6eGDRSbfJtAVwbLH5ceqF+YEyC8lj8ystKyZTy8adWr0qmkY52EfOeLA==
   dependencies:
     "@octokit/endpoint" "^6.0.1"
     "@octokit/request-error" "^2.1.0"
@@ -107,58 +107,58 @@
 
 "@octokit/types@^6.0.3", "@octokit/types@^6.16.1", "@octokit/types@^6.34.0":
   version "6.34.0"
-  resolved "https://registry.npmmirror.com/@octokit/types/download/@octokit/types-6.34.0.tgz#c6021333334d1ecfb5d370a8798162ddf1ae8218"
-  integrity sha1-xgITMzNNHs+103CoeYFi3fGughg=
+  resolved "https://registry.yarnpkg.com/@octokit/types/-/types-6.34.0.tgz#c6021333334d1ecfb5d370a8798162ddf1ae8218"
+  integrity sha512-s1zLBjWhdEI2zwaoSgyOFoKSl109CUcVBCc7biPJ3aAf6LGLU6szDvi31JPU7bxfla2lqfhjbbg/5DdFNxOwHw==
   dependencies:
     "@octokit/openapi-types" "^11.2.0"
 
 "@vercel/ncc@^0.31.1":
   version "0.31.1"
-  resolved "https://registry.npmmirror.com/@vercel/ncc/download/@vercel/ncc-0.31.1.tgz#9346c7e59326f5eeac75c0286e47df94c2d6d8f7"
-  integrity sha1-k0bH5ZMm9e6sdcAobkfflMLW2Pc=
+  resolved "https://registry.yarnpkg.com/@vercel/ncc/-/ncc-0.31.1.tgz#9346c7e59326f5eeac75c0286e47df94c2d6d8f7"
+  integrity sha512-g0FAxwdViI6UzsiVz5HssIHqjcPa1EHL6h+2dcJD893SoCJaGdqqgUF09xnMW6goWnnhbLvgiKlgJWrJa+7qYA==
 
 balanced-match@^1.0.0:
   version "1.0.2"
-  resolved "https://registry.npmmirror.com/balanced-match/download/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
-  integrity sha1-6D46fj8wCzTLnYf2FfoMvzV2kO4=
+  resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
+  integrity sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==
 
 before-after-hook@^2.2.0:
   version "2.2.2"
-  resolved "https://registry.npmmirror.com/before-after-hook/download/before-after-hook-2.2.2.tgz#a6e8ca41028d90ee2c24222f201c90956091613e"
-  integrity sha1-pujKQQKNkO4sJCIvIByQlWCRYT4=
+  resolved "https://registry.yarnpkg.com/before-after-hook/-/before-after-hook-2.2.2.tgz#a6e8ca41028d90ee2c24222f201c90956091613e"
+  integrity sha512-3pZEU3NT5BFUo/AD5ERPWOgQOCZITni6iavr5AUw5AUwQjMlI0kzu5btnyD39AF0gUEsDPwJT+oY1ORBJijPjQ==
 
 brace-expansion@^1.1.7:
   version "1.1.11"
-  resolved "https://registry.npmmirror.com/brace-expansion/download/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
-  integrity sha1-PH/L9SnYcibz0vUrlm/1Jx60Qd0=
+  resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
+  integrity sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==
   dependencies:
     balanced-match "^1.0.0"
     concat-map "0.0.1"
 
 concat-map@0.0.1:
   version "0.0.1"
-  resolved "https://registry.npmmirror.com/concat-map/download/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
+  resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
 
 deprecation@^2.0.0, deprecation@^2.3.1:
   version "2.3.1"
-  resolved "https://registry.npmmirror.com/deprecation/download/deprecation-2.3.1.tgz#6368cbdb40abf3373b525ac87e4a260c3a700919"
-  integrity sha1-Y2jL20Cr8zc7UlrIfkomDDpwCRk=
+  resolved "https://registry.yarnpkg.com/deprecation/-/deprecation-2.3.1.tgz#6368cbdb40abf3373b525ac87e4a260c3a700919"
+  integrity sha512-xmHIy4F3scKVwMsQ4WnVaS8bHOx0DmVwRywosKhaILI0ywMDWPtBSku2HNxRvF7jtwDRsoEwYQSfbxj8b7RlJQ==
 
 fs.realpath@^1.0.0:
   version "1.0.0"
-  resolved "https://registry.npmmirror.com/fs.realpath/download/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
+  resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
 
 function-bind@^1.1.1:
   version "1.1.1"
-  resolved "https://registry.npmmirror.com/function-bind/download/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
-  integrity sha1-pWiZ0+o8m6uHS7l3O3xe3pL0iV0=
+  resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
+  integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
 
 glob@^7.0.0:
   version "7.2.0"
-  resolved "https://registry.npmmirror.com/glob/download/glob-7.2.0.tgz#d15535af7732e02e948f4c41628bd910293f6023"
-  integrity sha1-0VU1r3cy4C6Uj0xBYovZECk/YCM=
+  resolved "https://registry.yarnpkg.com/glob/-/glob-7.2.0.tgz#d15535af7732e02e948f4c41628bd910293f6023"
+  integrity sha512-lmLf6gtyrPq8tTjSmrO94wBeQbFR3HbLHbuyD69wuyQkImp2hWqMGB47OX65FBkPffO641IP9jWa1z4ivqG26Q==
   dependencies:
     fs.realpath "^1.0.0"
     inflight "^1.0.4"
@@ -169,14 +169,14 @@ glob@^7.0.0:
 
 has@^1.0.3:
   version "1.0.3"
-  resolved "https://registry.npmmirror.com/has/download/has-1.0.3.tgz#722d7cbfc1f6aa8241f16dd814e011e1f41e8796"
-  integrity sha1-ci18v8H2qoJB8W3YFOAR4fQeh5Y=
+  resolved "https://registry.yarnpkg.com/has/-/has-1.0.3.tgz#722d7cbfc1f6aa8241f16dd814e011e1f41e8796"
+  integrity sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==
   dependencies:
     function-bind "^1.1.1"
 
 inflight@^1.0.4:
   version "1.0.6"
-  resolved "https://registry.npmmirror.com/inflight/download/inflight-1.0.6.tgz#49bd6331d7d02d0c09bc910a1075ba8165b56df9"
+  resolved "https://registry.yarnpkg.com/inflight/-/inflight-1.0.6.tgz#49bd6331d7d02d0c09bc910a1075ba8165b56df9"
   integrity sha1-Sb1jMdfQLQwJvJEKEHW6gWW1bfk=
   dependencies:
     once "^1.3.0"
@@ -184,76 +184,76 @@ inflight@^1.0.4:
 
 inherits@2:
   version "2.0.4"
-  resolved "https://registry.npmmirror.com/inherits/download/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
-  integrity sha1-D6LGT5MpF8NDOg3tVTY6rjdBa3w=
+  resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
+  integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
 
 interpret@^1.0.0:
   version "1.4.0"
-  resolved "https://registry.npmmirror.com/interpret/download/interpret-1.4.0.tgz#665ab8bc4da27a774a40584e812e3e0fa45b1a1e"
-  integrity sha1-Zlq4vE2iendKQFhOgS4+D6RbGh4=
+  resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.4.0.tgz#665ab8bc4da27a774a40584e812e3e0fa45b1a1e"
+  integrity sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==
 
 is-core-module@^2.2.0:
   version "2.7.0"
-  resolved "https://registry.npmmirror.com/is-core-module/download/is-core-module-2.7.0.tgz#3c0ef7d31b4acfc574f80c58409d568a836848e3"
-  integrity sha1-PA730xtKz8V0+AxYQJ1WioNoSOM=
+  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.7.0.tgz#3c0ef7d31b4acfc574f80c58409d568a836848e3"
+  integrity sha512-ByY+tjCciCr+9nLryBYcSD50EOGWt95c7tIsKTG1J2ixKKXPvF7Ej3AVd+UfDydAJom3biBGDBALaO79ktwgEQ==
   dependencies:
     has "^1.0.3"
 
 is-plain-object@^5.0.0:
   version "5.0.0"
-  resolved "https://registry.npmmirror.com/is-plain-object/download/is-plain-object-5.0.0.tgz#4427f50ab3429e9025ea7d52e9043a9ef4159344"
-  integrity sha1-RCf1CrNCnpAl6n1S6QQ6nvQVk0Q=
+  resolved "https://registry.yarnpkg.com/is-plain-object/-/is-plain-object-5.0.0.tgz#4427f50ab3429e9025ea7d52e9043a9ef4159344"
+  integrity sha512-VRSzKkbMm5jMDoKLbltAkFQ5Qr7VDiTFGXxYFXXowVj387GeGNOCsOH6Msy00SGZ3Fp84b1Naa1psqgcCIEP5Q==
 
 minimatch@^3.0.4:
   version "3.0.4"
-  resolved "https://registry.npmmirror.com/minimatch/download/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
-  integrity sha1-UWbihkV/AzBgZL5Ul+jbsMPTIIM=
+  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
+  integrity sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
   dependencies:
     brace-expansion "^1.1.7"
 
 node-fetch@^2.6.1:
   version "2.6.5"
-  resolved "https://registry.npmmirror.com/node-fetch/download/node-fetch-2.6.5.tgz#42735537d7f080a7e5f78b6c549b7146be1742fd"
-  integrity sha1-QnNVN9fwgKfl94tsVJtxRr4XQv0=
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.5.tgz#42735537d7f080a7e5f78b6c549b7146be1742fd"
+  integrity sha512-mmlIVHJEu5rnIxgEgez6b9GgWXbkZj5YZ7fx+2r94a2E+Uirsp6HsPTPlomfdHtpt/B0cdKviwkoaM6pyvUOpQ==
   dependencies:
     whatwg-url "^5.0.0"
 
 once@^1.3.0, once@^1.4.0:
   version "1.4.0"
-  resolved "https://registry.npmmirror.com/once/download/once-1.4.0.tgz#583b1aa775961d4b113ac17d9c50baef9dd76bd1"
+  resolved "https://registry.yarnpkg.com/once/-/once-1.4.0.tgz#583b1aa775961d4b113ac17d9c50baef9dd76bd1"
   integrity sha1-WDsap3WWHUsROsF9nFC6753Xa9E=
   dependencies:
     wrappy "1"
 
 path-is-absolute@^1.0.0:
   version "1.0.1"
-  resolved "https://registry.npmmirror.com/path-is-absolute/download/path-is-absolute-1.0.1.tgz#174b9268735534ffbc7ace6bf53a5a9e1b5c5f5f"
+  resolved "https://registry.yarnpkg.com/path-is-absolute/-/path-is-absolute-1.0.1.tgz#174b9268735534ffbc7ace6bf53a5a9e1b5c5f5f"
   integrity sha1-F0uSaHNVNP+8es5r9TpanhtcX18=
 
 path-parse@^1.0.6:
   version "1.0.7"
-  resolved "https://registry.npmmirror.com/path-parse/download/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
-  integrity sha1-+8EUtgykKzDZ2vWFjkvWi77bZzU=
+  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
+  integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
 rechoir@^0.6.2:
   version "0.6.2"
-  resolved "https://registry.npmmirror.com/rechoir/download/rechoir-0.6.2.tgz#85204b54dba82d5742e28c96756ef43af50e3384"
+  resolved "https://registry.yarnpkg.com/rechoir/-/rechoir-0.6.2.tgz#85204b54dba82d5742e28c96756ef43af50e3384"
   integrity sha1-hSBLVNuoLVdC4oyWdW70OvUOM4Q=
   dependencies:
     resolve "^1.1.6"
 
 resolve@^1.1.6:
   version "1.20.0"
-  resolved "https://registry.npmmirror.com/resolve/download/resolve-1.20.0.tgz#629a013fb3f70755d6f0b7935cc1c2c5378b1975"
-  integrity sha1-YpoBP7P3B1XW8LeTXMHCxTeLGXU=
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.20.0.tgz#629a013fb3f70755d6f0b7935cc1c2c5378b1975"
+  integrity sha512-wENBPt4ySzg4ybFQW2TT1zMQucPK95HSh/nq2CFTZVOGut2+pQvSsgtda4d26YrYcr067wjbmzOG8byDPBX63A==
   dependencies:
     is-core-module "^2.2.0"
     path-parse "^1.0.6"
 
 shelljs@^0.8.4:
   version "0.8.4"
-  resolved "https://registry.npmmirror.com/shelljs/download/shelljs-0.8.4.tgz#de7684feeb767f8716b326078a8a00875890e3c2"
-  integrity sha1-3naE/ut2f4cWsyYHiooAh1iQ48I=
+  resolved "https://registry.yarnpkg.com/shelljs/-/shelljs-0.8.4.tgz#de7684feeb767f8716b326078a8a00875890e3c2"
+  integrity sha512-7gk3UZ9kOfPLIAbslLzyWeGiEqx9e3rxwZM0KE6EL8GlGwjym9Mrlx5/p33bWTu9YG6vcS4MBxYZDHYr5lr8BQ==
   dependencies:
     glob "^7.0.0"
     interpret "^1.0.0"
@@ -261,27 +261,27 @@ shelljs@^0.8.4:
 
 tr46@~0.0.3:
   version "0.0.3"
-  resolved "https://registry.npmmirror.com/tr46/download/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
+  resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
   integrity sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=
 
 tunnel@0.0.6:
   version "0.0.6"
-  resolved "https://registry.npmmirror.com/tunnel/download/tunnel-0.0.6.tgz#72f1314b34a5b192db012324df2cc587ca47f92c"
-  integrity sha1-cvExSzSlsZLbASMk3yzFh8pH+Sw=
+  resolved "https://registry.yarnpkg.com/tunnel/-/tunnel-0.0.6.tgz#72f1314b34a5b192db012324df2cc587ca47f92c"
+  integrity sha512-1h/Lnq9yajKY2PEbBadPXj3VxsDDu844OnaAo52UVmIzIvwwtBPIuNvkjuzBlTWpfJyUbG3ez0KSBibQkj4ojg==
 
 universal-user-agent@^6.0.0:
   version "6.0.0"
-  resolved "https://registry.npmmirror.com/universal-user-agent/download/universal-user-agent-6.0.0.tgz#3381f8503b251c0d9cd21bc1de939ec9df5480ee"
-  integrity sha1-M4H4UDslHA2c0hvB3pOeyd9UgO4=
+  resolved "https://registry.yarnpkg.com/universal-user-agent/-/universal-user-agent-6.0.0.tgz#3381f8503b251c0d9cd21bc1de939ec9df5480ee"
+  integrity sha512-isyNax3wXoKaulPDZWHQqbmIx1k2tb9fb3GGDBRxCscfYV2Ch7WxPArBsFEG8s/safwXTT7H4QGhaIkTp9447w==
 
 webidl-conversions@^3.0.0:
   version "3.0.1"
-  resolved "https://registry.npmmirror.com/webidl-conversions/download/webidl-conversions-3.0.1.tgz?cache=0&sync_timestamp=1632753508689&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fwebidl-conversions%2Fdownload%2Fwebidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
+  resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
   integrity sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE=
 
 whatwg-url@^5.0.0:
   version "5.0.0"
-  resolved "https://registry.npmmirror.com/whatwg-url/download/whatwg-url-5.0.0.tgz?cache=0&sync_timestamp=1633541373294&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fwhatwg-url%2Fdownload%2Fwhatwg-url-5.0.0.tgz#966454e8765462e37644d3626f6742ce8b70965d"
+  resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-5.0.0.tgz#966454e8765462e37644d3626f6742ce8b70965d"
   integrity sha1-lmRU6HZUYuN2RNNib2dCzotwll0=
   dependencies:
     tr46 "~0.0.3"
@@ -289,5 +289,5 @@ whatwg-url@^5.0.0:
 
 wrappy@1:
   version "1.0.2"
-  resolved "https://registry.npmmirror.com/wrappy/download/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
+  resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
