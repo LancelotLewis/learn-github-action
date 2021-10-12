@@ -15,6 +15,9 @@ jobs:
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
 
+      - name: Install ncc
+        run: yarn global add @vercel/ncc
+
       - name: Build
         run: yarn build:test
 
