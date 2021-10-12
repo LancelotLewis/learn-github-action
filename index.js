@@ -18,6 +18,7 @@ const shell = require('shelljs');
         listeners: {
           stderr(err) {
             console.log('error', err.toString());
+            throw new Error(err.toString());
           },
         },
       });
