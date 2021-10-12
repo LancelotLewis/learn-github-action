@@ -10225,6 +10225,15 @@ const shell = __nccwpck_require__(6288);
       await exec.exec('pwd');
       console.log('\n');
       await exec.exec('ls');
+      console.log('\n');
+      await exec.exec('test error', [], {
+        listeners: {
+          stderr(err) {
+            console.log('error', err.toString());
+          },
+        },
+      });
+      console.log('after error');
     } else {
       shell.exec('pwd');
       console.log('\n');
