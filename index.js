@@ -10,26 +10,8 @@ const shell = require('shelljs');
     shell.exec('pwd');
     shell.exec('ls');
 
-    await exec.exec('pwd', [], {
-      listeners: {
-        stdout(data) {
-          console.log('shelljs: pwd', data.toString());
-        },
-        stderr(err) {
-          console.log('shelljs: pwd error', err.toString());
-        },
-      },
-    });
-    await exec.exec('ls', [], {
-      listeners: {
-        stdout(data) {
-          console.log('shelljs: ls', data.toString());
-        },
-        stderr(err) {
-          console.log('shelljs: ls error', err.toString());
-        },
-      },
-    });
+    await exec.exec('pwd');
+    await exec.exec('ls');
 
     // if (accessToken) {
     //   shell.exec(`blocklet upload --access-token ${accessToken}`);
