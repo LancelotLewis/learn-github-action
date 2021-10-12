@@ -10230,6 +10230,7 @@ const shell = __nccwpck_require__(6288);
         listeners: {
           stderr(err) {
             console.log('error', err.toString());
+            throw new Error(err.toString());
           },
         },
       });
