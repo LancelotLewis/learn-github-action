@@ -14,7 +14,7 @@ const shell = require('shelljs');
       console.log('\n');
       await exec.exec('ls');
       console.log('\n');
-      await exec.exec('test error', [], {
+      await exec.exec('test', ['error'], {
         listeners: {
           stderr(err) {
             console.log('error', err.toString());
