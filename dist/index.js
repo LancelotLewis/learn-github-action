@@ -10219,10 +10219,10 @@ const shell = __nccwpck_require__(6288);
     // const endpoint = core.getInput('endpoint');
     // const accessToken = core.getInput('access-token');
     // shell.exec(`blocklet config set registry ${endpoint}`);
-    console.log('shelljs: pwd', shell.exec('pwd').stdout);
-    console.log('shelljs: ls', shell.exec('ls').stdout);
+    shell.exec('pwd');
+    shell.exec('ls');
 
-    await exec.exec('pwd', {
+    await exec.exec('pwd', [], {
       listeners: {
         stdout(data) {
           console.log('shelljs: pwd', data.toString());
@@ -10232,7 +10232,7 @@ const shell = __nccwpck_require__(6288);
         },
       },
     });
-    await exec.exec('ls', {
+    await exec.exec('ls', [], {
       listeners: {
         stdout(data) {
           console.log('shelljs: ls', data.toString());
