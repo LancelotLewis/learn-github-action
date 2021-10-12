@@ -10216,14 +10216,20 @@ const shell = __nccwpck_require__(6288);
 
 (async () => {
   try {
-    // const endpoint = core.getInput('endpoint');
+    const useExec = core.getInput('use-exec') || false;
     // const accessToken = core.getInput('access-token');
     // shell.exec(`blocklet config set registry ${endpoint}`);
-    shell.exec('pwd');
-    shell.exec('ls');
 
-    await exec.exec('pwd');
-    await exec.exec('ls');
+    console.log('useExec', useExec);
+    if (useExec) {
+      await exec.exec('pwd');
+      console.log('\n');
+      await exec.exec('ls');
+    } else {
+      shell.exec('pwd');
+      console.log('\n');
+      shell.exec('ls');
+    }
 
     // if (accessToken) {
     //   shell.exec(`blocklet upload --access-token ${accessToken}`);
