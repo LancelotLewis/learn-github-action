@@ -28,7 +28,7 @@ jobs:
         uses: ./
         with:
           use-exec: true
-      - uses: ncipollo/release-action@v1
-        with:
-          artifacts: 'dist/*.*'
-          token: ${{ secrets.GITHUB_TOKEN }}
+      # - uses: ncipollo/release-action@v1
+      #   with:
+      #     artifacts: 'dist/*.*'
+      #     token: ${{ secrets.GITHUB_TOKEN }}
