@@ -10226,15 +10226,15 @@ const shell = __nccwpck_require__(6288);
       console.log('\n');
       await exec.exec('ls');
       console.log('\n');
-      await exec.exec('test123', ['error'], {
-        listeners: {
-          stderr(err) {
-            console.log('error', err.toString());
-            throw new Error(err.toString());
-          },
-        },
-      });
-      console.log('after error');
+      // await exec.exec('test123', ['error'], {
+      //   listeners: {
+      //     stderr(err) {
+      //       console.log('error', err.toString());
+      //       throw new Error(err.toString());
+      //     },
+      //   },
+      // });
+      // console.log('after error');
     } else {
       shell.exec('pwd');
       console.log('\n');
