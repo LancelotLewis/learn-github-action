@@ -14,15 +14,15 @@ const shell = require('shelljs');
       console.log('\n');
       await exec.exec('ls');
       console.log('\n');
-      await exec.exec('test123', ['error'], {
-        listeners: {
-          stderr(err) {
-            console.log('error', err.toString());
-            throw new Error(err.toString());
-          },
-        },
-      });
-      console.log('after error');
+      // await exec.exec('test123', ['error'], {
+      //   listeners: {
+      //     stderr(err) {
+      //       console.log('error', err.toString());
+      //       throw new Error(err.toString());
+      //     },
+      //   },
+      // });
+      // console.log('after error');
     } else {
       shell.exec('pwd');
       console.log('\n');
