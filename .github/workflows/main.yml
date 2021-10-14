@@ -26,12 +26,16 @@ jobs:
 
       - name: Test action
         uses: ./
-
       - name: Test action
         uses: ./
+
+      - name: Test action-workflow
+        uses: blocklet/action-workflow@v0.2.1
         with:
-          use-exec: true
-      - uses: ncipollo/release-action@v1
-        with:
-          artifacts: 'dist/*.*'
-          token: ${{ secrets.GITHUB_TOKEN }}
+          skip-abtnode: true
+          skip-release: true
+
+      # - uses: ncipollo/release-action@v1
+      #   with:
+      #     artifacts: 'dist/*.*'
+      #     token: ${{ secrets.GITHUB_TOKEN }}
