@@ -26,8 +26,12 @@ jobs:
 
       - name: Test action
         uses: ./
+        with:
+          command: cd practice && pwd && ls
       - name: Test action
         uses: ./
+        with:
+          command: cd dist && pwd && ls
 
       - name: Test action-workflow
         uses: blocklet/action-workflow@v0.2.1

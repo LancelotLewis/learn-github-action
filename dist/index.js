@@ -8786,7 +8786,7 @@ function wrappy (fn, cb) {
 
 /***/ }),
 
-/***/ 4586:
+/***/ 9239:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 const core = __nccwpck_require__(9699);
@@ -8794,10 +8794,12 @@ const shell = __nccwpck_require__(6288);
 
 module.exports = async () => {
   try {
-    shell.exec('pwd');
-    shell.exec('cd dist && pwd');
-    shell.exec('pwd');
-    console.log('\n\n\n-------\n\n\n');
+    core
+      .getInput('command')
+      .split('\n')
+      .forEach((command) => {
+        shell.exec(command);
+      });
   } catch (error) {
     core.setFailed(error.message);
   }
@@ -8948,9 +8950,10 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 // const practiceExec = require('./practice/exec');
-const practiceJumpPath = __nccwpck_require__(4586);
+// const practiceJumpPath = require('./practice/jump-path');
+const practiceCommand = __nccwpck_require__(9239);
 
-practiceJumpPath();
+practiceCommand();
 
 })();
 
