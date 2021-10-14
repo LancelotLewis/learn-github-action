@@ -15,14 +15,14 @@ jobs:
         with:
           node-version: 14
 
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+      # - name: Install dependencies
+      #   uses: bahmutov/npm-install@v1
 
-      - name: Install ncc
-        run: yarn global add @vercel/ncc
+      # - name: Install ncc
+      #   run: yarn global add @vercel/ncc
 
-      - name: Build
-        run: yarn build:test
+      # - name: Build
+      #   run: yarn build:test
 
       - name: Test action
         uses: ./
