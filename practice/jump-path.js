@@ -1,11 +1,11 @@
 const core = require('@actions/core');
-const shell = require('shelljs');
+const exec = require('@actions/exec');
 
 module.exports = async () => {
   try {
-    shell.exec('pwd');
-    shell.exec('cd dist && pwd');
-    shell.exec('pwd');
+    await exec.exec('pwd');
+    await exec.exec('cd dist && pwd');
+    await exec.exec('pwd');
     console.log('\n\n\n-------\n\n\n');
   } catch (error) {
     core.setFailed(error.message);
