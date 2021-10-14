@@ -8795,7 +8795,7 @@ const shell = __nccwpck_require__(6288);
 module.exports = async () => {
   try {
     shell.exec('pwd');
-    shell.exec('cd dist');
+    shell.exec('cd dist && pwd');
     shell.exec('pwd');
     console.log('\n\n\n-------\n\n\n');
   } catch (error) {
