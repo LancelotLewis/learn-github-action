@@ -58,7 +58,5 @@ jobs:
 
       - name: Reset tag v1
         run: |
-          git tag -d v1
-          git push origin :v1
           git tag -a v1 -m 'Sync with v${{ steps.package-version.outputs.current-version}}'
-          git push origin v1
+          git push origin v1 --force
