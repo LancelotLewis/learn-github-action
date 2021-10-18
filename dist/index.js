@@ -8800,7 +8800,7 @@ module.exports = async () => {
     shell.exec('pwd');
     shell.exec('ls');
     const file = __nccwpck_require__.ab + "index1.js";
-    console.log('file-path', __nccwpck_require__.ab + "index1.js");
+    console.log('file-path', process.cwd(), __nccwpck_require__.ab + "index1.js");
     // core
     //   .getInput('command')
     //   .split('\n')

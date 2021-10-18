@@ -9,7 +9,7 @@ module.exports = async () => {
     shell.exec('pwd');
     shell.exec('ls');
     const file = path.join(process.cwd(), 'index.js');
-    console.log('file-path', file);
+    console.log('file-path', process.cwd(), file);
     // core
     //   .getInput('command')
     //   .split('\n')
