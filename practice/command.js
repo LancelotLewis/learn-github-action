@@ -1,3 +1,4 @@
+const path = require('path');
 const core = require('@actions/core');
 const shell = require('shelljs');
 
