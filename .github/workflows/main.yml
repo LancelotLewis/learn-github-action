@@ -34,10 +34,10 @@ jobs:
       #     working-directory: ./dist
       #     command: pwd && ls
 
-      # - name: Test action
-      #   uses: ./
-      #   with:
-      #     command: pwd && ls
+      - name: Test action
+        uses: ./
+        with:
+          command: pwd && ls
 
       # - name: Test action-workflow
       #   uses: blocklet/action-workflow@v0.2.1
