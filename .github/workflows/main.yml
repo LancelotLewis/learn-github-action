@@ -44,6 +44,11 @@ jobs:
         with:
           command: pwd && ls
 
+      - name: Config git
+        run: |
+          git config --local user.name "LancelotLewis"
+          git config --local user.email "lancelot_lewis@163.com"
+
       # - name: Test action-workflow
       #   uses: blocklet/action-workflow@v0.2.1
       #   with:
