@@ -20,14 +20,13 @@ inputs:
     description: 'Working directory'
     default: ./
 
-# runs:
-#   using: 'node12'
-#   main: 'dist/index.js'
-
 runs:
-  using: 'composite'
-  steps:
-    - name: 'Test'
-      run: ${{ inputs.command }}
-      shell: bash
-      working-directory: ${{ inputs.working-directory }}
+  using: 'node12'
+  main: 'dist/index.js'
+# runs:
+#   using: 'composite'
+#   steps:
+#     - name: 'Test'
+#       run: ${{ inputs.command }}
+#       shell: bash
+#       working-directory: ${{ inputs.working-directory }}
