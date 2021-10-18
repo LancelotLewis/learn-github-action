@@ -8799,8 +8799,8 @@ module.exports = async () => {
     shell.cd('dist');
     shell.exec('pwd');
     shell.exec('ls');
-    const file = __nccwpck_require__.ab + "index1.js";
-    console.log('file-path', process.cwd(), __nccwpck_require__.ab + "index1.js");
+    const file = path.join(process.cwd(), 'licenses.txt');
+    console.log('file-path', process.cwd(), file);
     // core
     //   .getInput('command')
     //   .split('\n')
