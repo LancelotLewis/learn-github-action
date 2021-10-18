@@ -10,36 +10,53 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Use Node.js v14
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14
 
-      # - name: Install dependencies
-      #   uses: bahmutov/npm-install@v1
+      - name: Get npm version
+        id: package-version
+        uses: martinbeentjes/npm-get-version-action@master
 
-      # - name: Install ncc
-      #   run: yarn global add @vercel/ncc
+      - name: Install ncc
+        run: yarn global add @vercel/ncc
 
-      # - name: Build
-      #   run: yarn build:test
+      - name: Build
+        run: yarn build
 
-      - name: Test action
-        uses: ./
-        with:
-          command: cd practice && pwd && ls
-      - name: Test action
-        uses: ./
-        with:
-          command: cd dist && pwd && ls
+      # - name: Test action
+      #   uses: ./
+      #   with:
+      #     working-directory: ./practice
+      #     command: pwd && ls
+      # - name: Test action
+      #   uses: ./
+      #   with:
+      #     working-directory: ./dist
+      #     command: pwd && ls
 
-      - name: Test action-workflow
-        uses: blocklet/action-workflow@v0.2.1
-        with:
-          skip-abtnode: true
-          skip-release: true
+      # - name: Test action
+      #   uses: ./
+      #   with:
+      #     command: pwd && ls
+
+      # - name: Test action-workflow
+      #   uses: blocklet/action-workflow@v0.2.1
+      #   with:
+      #     skip-abtnode: true
+      #     skip-release: true
 
       # - uses: ncipollo/release-action@v1
       #   with:
       #     artifacts: 'dist/*.*'
       #     token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish dist
+        run: |
+          git add dist
+          git commit --allow-empty -m "Github action build"
+          git tag -a v${{ steps.package-version.outputs.current-version}} -m "Release ${{ steps.package-version.outputs.current-version}}"
+          git push origin v${{ steps.package-version.outputs.current-version}}
+
+      - name: Reset tag v1
+        run: |
+          git tag -d v1
+          git push origin :v1
+          git tag -a v1 -m 'Sync with v${{ steps.package-version.outputs.current-version}}'
+          git push origin v1
