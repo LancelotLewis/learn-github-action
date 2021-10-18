@@ -17,8 +17,13 @@ jobs:
         id: package-version
         uses: martinbeentjes/npm-get-version-action@master
 
-      - name: Install ncc
-        run: yarn global add @vercel/ncc
+      - name: Set yarn cache
+        uses: c-hive/gha-yarn-cache@v2
+
+      - name: Install dependencies
+        run: |
+          yarn
+          yarn global add @vercel/ncc
 
       - name: Build
         run: yarn build
