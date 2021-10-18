@@ -48,20 +48,19 @@ jobs:
       #     artifacts: 'dist/*.*'
       #     token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Realese
-        uses: ncipollo/release-action@v1
-        with:
-          tag: v${{ steps.package-version.outputs.current-version}}
-          token: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Publish dist
         run: |
           git config --local user.name "LancelotLewis"
           git config --local user.email "lancelot_lewis@163.com"
           git add dist
           git commit --allow-empty -m "Github action build"
-          git tag -a v${{ steps.package-version.outputs.current-version}} -m "Release ${{ steps.package-version.outputs.current-version}}"
-          git push origin v${{ steps.package-version.outputs.current-version}}
+          git push
+
+      - name: Realese
+        uses: ncipollo/release-action@v1
+        with:
+          tag: v${{ steps.package-version.outputs.current-version}}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Reset tag v1
         run: |
