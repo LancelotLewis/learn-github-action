@@ -1,32 +1,28 @@
-name: 'Upload to blocklet registry'
-description: 'Greet someone and record the time'
+name: 'Learn github action'
+description: 'Learn github action'
 inputs:
-  endpoint:
-    description: 'Endpoint of blocklet registry'
+  step-1-1:
+    description: 'step-1-1'
     required: false
-  access-token:
-    description: 'Access token of blocklet registry'
+  step-1-2:
+    description: 'step-1-2'
     required: false
-  developer-sk:
-    description: 'Developer-sk of blocklet registry'
+  step-1-3:
+    description: 'step-1-3'
     required: false
-  use-exec:
-    description: 'is use exec?'
-    default: false
-  command:
-    description: 'Command to exec'
+  step-1-4:
+    description: 'step-1-4'
     required: false
-  working-directory:
-    description: 'Working directory'
-    default: ./
 
-runs:
-  using: 'node12'
-  main: 'dist/index.js'
 # runs:
-#   using: 'composite'
-#   steps:
-#     - name: 'Test'
-#       run: ${{ inputs.command }}
-#       shell: bash
-#       working-directory: ${{ inputs.working-directory }}
+#   using: 'node12'
+#   main: 'dist/index.js'
+runs:
+  using: composite
+  steps:
+    - name: Step-1
+      uses: actions/hello-world-javascript-action@main
+      with:
+        who-to-greet: ${{ inputs.step-1-1 || inputs.step-1-2 || inputs.step-1-3 || inputs.step-1-4 }}
+    - name: Step-2
+      run: echo "${{ inputs.step-1-1 || inputs.step-1-2 || inputs.step-1-3 || inputs.step-1-4 }}"
