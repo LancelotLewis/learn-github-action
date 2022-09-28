@@ -23,6 +23,15 @@ jobs:
           files: |
             docs/**
 
+  echo:
+    runs-on: ubuntu-latest # windows-latest | macos-latest
+    needs: [before-changed-files]
+    steps:
+      - name: List all changed files
+        run: |
+          for file in ${{ needs.before-changed-files.steps.changed-files.outputs.all_changed_files }}; do
+            echo "$file was changed"
+          done
   changed-files-all:
     if: needs.before-changed-files.steps.changed-files-docs.any_changed == 'false'
     runs-on: ubuntu-latest # windows-latest | macos-latest
