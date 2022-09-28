@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest # windows-latest | macos-latest
     name: Test changed-files (before)
     outputs:
-      changed-docs: ${{ steps.changed-files-docs.outputs.any_changed }}
       changed-files: ${{ toJSON(steps.changed-files-docs.outputs) }}
+      bump-version: ${{ steps.changed-files-docs.outputs.only_changed == 'false' }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -32,8 +32,7 @@ jobs:
     steps:
       - name: List all changed files
         run: |
-          echo "${{ needs.before-changed-files.outputs.changed-docs }}"
-          echo "${{ needs.before-changed-files.outputs.changed-files }}"
+          echo "${{ toJSON(needs.before-changed-files.outputs) }}"
   changed-files-all:
     if: needs.before-changed-files.outputs.changed-docs == 'false'
     runs-on: ubuntu-latest # windows-latest | macos-latest
@@ -60,6 +59,9 @@ jobs:
     name: Test changed-files (docs)
     needs: [before-changed-files]
     steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # OR "2" -> To retrieve the preceding commit.
       # Example 2
       - name: Get changed files in the docs folder
         id: changed-files-specific
