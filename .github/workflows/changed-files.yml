@@ -14,6 +14,7 @@ jobs:
     name: Test changed-files (before)
     outputs:
       changed-docs: ${{ steps.changed-files-docs.outputs.any_changed }}
+      changed-files: ${{ toJSON(steps.changed-files-docs.outputs) }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -24,17 +25,21 @@ jobs:
         with:
           files: |
             docs/**
+          files_ignore: |
+            **/**
 
   echo:
     runs-on: ubuntu-latest # windows-latest | macos-latest
     needs: [before-changed-files]
     steps:
       - name: List all changed files
-        run: echo "${{ needs.before-changed-files.outputs.changed-docs }}"
+        run: |
+          echo "${{ needs.before-changed-files.outputs.changed-docs }}"
+          echo "${{ needs.before-changed-files.outputs.changed-files }}"
   changed-files-all:
     if: needs.before-changed-files.outputs.changed-docs == 'false'
     runs-on: ubuntu-latest # windows-latest | macos-latest
-    name: Test changed-files (checkout)
+    name: Test changed-files (all)
     needs: [before-changed-files]
     steps:
       - uses: actions/checkout@v3
@@ -54,7 +59,7 @@ jobs:
   changed-files-docs:
     if: needs.before-changed-files.outputs.changed-docs == 'true'
     runs-on: ubuntu-latest # windows-latest | macos-latest
-    name: Test changed-files (install)
+    name: Test changed-files (docs)
     needs: [before-changed-files]
     steps:
       # Example 2
