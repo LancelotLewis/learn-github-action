@@ -9,9 +9,25 @@ on:
       - test-changed-files
 
 jobs:
-  checkout:
+  before-changed-files:
+    runs-on: ubuntu-latest # windows-latest | macos-latest
+    name: Test changed-files (before)
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # OR "2" -> To retrieve the preceding commit.
+      - name: Get changed files in the docs folder
+        id: changed-files-docs
+        uses: tj-actions/changed-files@v31
+        with:
+          files: |
+            docs/**
+
+  changed-files-all:
+    if: needs.before-changed-files.steps.changed-files-docs.any_changed == 'false'
     runs-on: ubuntu-latest # windows-latest | macos-latest
     name: Test changed-files (checkout)
+    needs: [before-changed-files]
     steps:
       - uses: actions/checkout@v3
         with:
@@ -27,10 +43,11 @@ jobs:
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             echo "$file was changed"
           done
-  install:
+  changed-files-docs:
+    if: needs.before-changed-files.steps.changed-files-docs.any_changed == 'true'
     runs-on: ubuntu-latest # windows-latest | macos-latest
     name: Test changed-files (install)
-    needs: [checkout]
+    needs: [before-changed-files]
     steps:
       # Example 2
       - name: Get changed files in the docs folder
