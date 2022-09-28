@@ -9,9 +9,9 @@ on:
       - test-changed-files
 
 jobs:
-  build:
+  checkout:
     runs-on: ubuntu-latest # windows-latest | macos-latest
-    name: Test changed-files
+    name: Test changed-files (checkout)
     steps:
       - uses: actions/checkout@v3
         with:
@@ -27,7 +27,11 @@ jobs:
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             echo "$file was changed"
           done
-
+  install:
+    runs-on: ubuntu-latest # windows-latest | macos-latest
+    name: Test changed-files (install)
+    needs: [checkout]
+    steps:
       # Example 2
       - name: Get changed files in the docs folder
         id: changed-files-specific
