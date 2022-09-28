@@ -35,7 +35,7 @@ jobs:
           echo "${{ needs.before-changed-files.outputs.bump-version }}"
           echo "${{ needs.before-changed-files.outputs.changed-files }}"
   changed-files-all:
-    if: needs.before-changed-files.outputs.bump-version == 'false'
+    if: needs.before-changed-files.outputs.bump-version == 'true'
     runs-on: ubuntu-latest # windows-latest | macos-latest
     name: Test changed-files (all)
     needs: [before-changed-files]
@@ -55,7 +55,7 @@ jobs:
             echo "$file was changed"
           done
   changed-files-docs:
-    if: needs.before-changed-files.outputs.bump-version == 'true'
+    if: needs.before-changed-files.outputs.bump-version == 'false'
     runs-on: ubuntu-latest # windows-latest | macos-latest
     name: Test changed-files (docs)
     needs: [before-changed-files]
